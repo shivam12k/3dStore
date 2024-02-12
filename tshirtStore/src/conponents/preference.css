@@ -1,0 +1,70 @@
+html {
+    font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: "Inter var", sans-serif;
+    }
+}
+
+
+select {
+    min-width: 10em;
+    padding: 0.5em 1em;
+    background: transparent;
+    border: #444 solid 0.1px;
+    border-radius: 1em;
+    color: inherit;
+    /* font: inherit; */
+    opacity: 0.5;
+}
+
+.fixed option {
+    background: indigo;
+    opacity: 0.5;
+}
+
+select.solid {
+    background: #ffffff;
+}
+
+figure {
+    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 1em;
+
+    width: calc(33% - 2em);
+    min-width: 10em;
+    flex: 1 auto;
+}
+
+label {
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+}
+
+select {
+    display: block;
+    margin-top: auto;
+}
+
+option {
+    /* font: inherit; */
+    background: transparent;
+    /* Add this line to make options transparent */
+    opacity: 0.5;
+}
+
+/* code {
+    font-size: inherit;
+} */
+
+a:link {
+    color: deepSkyBlue;
+}
+
+a:visited {
+    color: lightSkyBlue;
+}
