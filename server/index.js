@@ -10,7 +10,7 @@ app.use('/api/v1/dalle', dalleRoutes);
 app.get("/", (req, res) => {
   res.status(200).json({ message: "hellow world" });
 });
-
-app.listen(8080, () => {
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
   console.log("Server is listening at the port 8080");
 });
